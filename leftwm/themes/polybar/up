@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# This is not ideal when you consider this is not for a Virtual Screen only, but eh
 xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
 
 export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
