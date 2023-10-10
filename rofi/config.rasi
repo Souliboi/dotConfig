@@ -1,0 +1,15 @@
+configuration {
+	modes: "drun, clipboard:greenclip";
+	font: "JetBrainsMono Nerd Font 10";
+	show-icons: true;
+	terminal: "wezterm";
+	drun-match-fields: "name,generic,exec,categories,keywords";
+	drun-display-format: "{name}";
+	display-drun: "Apps";
+	display-clipboard: "Clipboard";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+@theme "./theme.rasi"
