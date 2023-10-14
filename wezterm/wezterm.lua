@@ -4,6 +4,9 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.tab_bar_at_bottom = false
+config.use_fancy_tab_bar = false
+config.enable_scroll_bar = false
 config.font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font" })
 config.font_size = 10
 config.window_frame = {
@@ -38,8 +41,18 @@ config.colors = {
 
 	},
 	tab_bar = {
-		inactive_tab_edge = '#CCCCCC',
+		background = '#262626',
+		active_tab = {
+			bg_color = '#6F356F',
+			fg_color = '#C0C0C0',
+		},
 	},
+}
+config.window_padding = {
+	left = 0,
+	right = 0,
+	top = 0,
+	bottom = 0,
 }
 
 return config
