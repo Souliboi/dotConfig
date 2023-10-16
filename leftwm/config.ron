@@ -17,12 +17,10 @@
     ],
     max_window_width: None,
     layouts: [
-        "EvenHorizontal",
-        "EvenVertical",
+        "LeftWiderRightStack",
     ],
     layout_definitions: [
-        (name: "EvenHorizontal", flip: None, rotate: North, reserve: None, columns: (flip: None, rotate: North, main: None, stack: (flip: None, rotate: North, split: Vertical), second_stack: None)),
-        (name: "EvenVertical", flip: None, rotate: North, reserve: None, columns: (flip: None, rotate: North, main: None, stack: (flip: None, rotate: North, split: Horizontal), second_stack: None)),
+        (name: "LeftWiderRightStack", flip: None, rotate: North, reserve: None, columns: (flip: None, rotate: North, main: None, stack: (flip: None, rotate: North, split: Vertical), second_stack: None)),
     ],
     layout_mode: Tag,
     insert_behavior: Bottom,
@@ -47,7 +45,6 @@
         (command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
         (command: Execute, value: "loginctl kill-session $XDG_SESSION_ID", modifier: ["modkey", "Shift"], key: "x"),
-        (command: Execute, value: "slock", modifier: ["modkey", "Control"], key: "l"),
         (command: ToggleScratchPad, value: "WezTerm", modifier: ["modkey", "Shift"], key: "w"),
         (command: SwapTags, value: "", modifier: ["modkey"], key: "w"),
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "k"),
