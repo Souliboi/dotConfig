@@ -4,11 +4,11 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-local gpus = wezterm.gui.enumerate_gpus()
+-- local gpus = wezterm.gui.enumerate_gpus()
 
-config.webgpu_preferred_adapter = gpus[1]
-config.front_end = 'WebGpu'
-config.enable_wayland = false 
+-- config.webgpu_preferred_adapter = gpus[1]
+-- config.front_end = 'WebGpu'
+config.enable_wayland = true
 config.tab_bar_at_bottom = false
 config.use_fancy_tab_bar = false
 config.enable_scroll_bar = false
