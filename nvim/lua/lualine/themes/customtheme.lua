@@ -4,7 +4,7 @@ local colors = {
 	green 	= '#11D116',
 	olive 	= '#F67400',
 	navy 	= '#1D99F3',
-	purple 	= '#9B59B6',
+	purple 	= '#6F356F',
 	teal 	= '#1ABC9C',
 	silver 	= '#FCFCFC',
 	gray 	= '#7F8C8D',
@@ -14,23 +14,22 @@ local colors = {
 	blue 	= '#3DAEE9',
 	fuchsia = '#8E44AD',
 	aqua 	= '#16A085',
-	white 	= '#FFFFFF',
-	termfg	= '#C0C0C0',
-	termbg	= '#262626',
+	white 	= '#C0C0C0',
+	notabbg = '#333333'
 }
 
 return {
 	normal = {
-		a = { fg = colors.white, bg = colors.blue, gui = 'bold' },
-		b = { fg = colors.white, bg = colors.gray },
-		c = { fg = colors.silver, bg = colors.black },
+		a = { fg = colors.white, bg = colors.purple },
+		b = { fg = colors.white, bg = colors.purple },
+		c = { fg = colors.white, bg = colors.notabbg },
 	},
-	insert = { a = { fg = colors.white, bg = colors.green, gui = 'bold' } },
-  	visual = { a = { fg = colors.white, bg = colors.purple, gui = 'bold' } },
-  	replace = { a = { fg = colors.white, bg = colors.red, gui = 'bold' } },
+	insert = { a = { fg = colors.white, bg = colors.purple } },
+  	visual = { a = { fg = colors.white, bg = colors.purple } },
+  	replace = { a = { fg = colors.white, bg = colors.purple } },
   	inactive = {
-    		a = { fg = colors.silver, bg = colors.gray, gui = 'bold' },
-    		b = { fg = colors.gray, bg = colors.black },
-    		c = { fg = colors.silver, bg = colors.black },
+    		a = { fg = colors.white, bg = colors.purple },
+    		b = { fg = colors.white, bg = colors.purple },
+    		c = { fg = colors.white, bg = colors.notabbg },
   	},
 }
