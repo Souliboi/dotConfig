@@ -11,6 +11,7 @@ ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
+flameshot &
 feh --bg-fill $SCRIPTPATH/background.png &
 dunst -conf $SCRIPTPATH/dunstrc &
 polybar -c $SCRIPTPATH/polybar.config
