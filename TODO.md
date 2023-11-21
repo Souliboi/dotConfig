@@ -1,7 +1,4 @@
 Todo for Neovim:
-- Line numbers
-- Fix Indenting
-- Write Lualine theme
 - Remap some shortcuts
 
 Todo for WezTerm:

@@ -5,3 +5,5 @@ Config files for;
 - Rofi
 - Dunst
 - Polybar
+- i3
+- Starship
