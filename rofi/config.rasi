@@ -1,6 +1,6 @@
 configuration {
 	modes: "drun, clipboard:greenclip";
-	font: "JetBrainsMono Nerd Font 10";
+	font: "JetBrainsMono NF 10";
 	show-icons: true;
 	terminal: "wezterm";
 	drun-match-fields: "name,generic,exec,categories,keywords";
